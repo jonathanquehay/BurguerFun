@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurguerFun - Servicios</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+    <!-- SEO & Open Graph Meta Tags -->
+    <meta name="description" content="Descubre nuestro menú de hamburguesas, desde las clásicas hasta nuestras creaciones especiales. También ofrecemos servicios de catering para tus eventos.">
+    <meta property="og:title" content="BurguerFun - Servicios">
+    <meta property="og:description" content="Descubre nuestro menú de hamburguesas, desde las clásicas hasta nuestras creaciones especiales. También ofrecemos servicios de catering para tus eventos.">
+    <meta property="og:image" content="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+
+    <!-- Tailwind CSS CDN (script tag) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- GLightbox CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+    
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-gray-900 text-white shadow-lg fixed w-full z-20">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <a href="index.html" class="flex items-center space-x-2">
+                <i class="fas fa-hamburger text-2xl text-yellow-400"></i>
+                <span class="text-xl font-bold">BurguerFun</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="hover:text-yellow-400 transition duration-300">Inicio</a>
+                <a href="about.html" class="hover:text-yellow-400 transition duration-300">Nosotros</a>
+                <a href="services.html" class="hover:text-yellow-400 transition duration-300">Servicios</a>
+                <a href="gallery.html" class="hover:text-yellow-400 transition duration-300">Galería</a>
+                <a href="contact.html" class="hover:text-yellow-400 transition duration-300">Contacto</a>
+                <a href="#contact" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full hover:bg-yellow-500 transition duration-300">¡Pide ahora!</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="burger-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden nav-links bg-gray-900">
+            <button class="absolute top-4 right-4 text-white text-2xl close-menu-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <a href="index.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Inicio</a>
+            <a href="about.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Nosotros</a>
+            <a href="services.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Servicios</a>
+            <a href="gallery.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Galería</a>
+            <a href="contact.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Contacto</a>
+            <a href="#contact" class="block p-4 text-center bg-yellow-400 text-gray-900 hover:bg-yellow-500 transition duration-300">¡Pide ahora!</a>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="hero-services" class="relative h-96 flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <img src="https://images.pexels.com/photos/327158/pexels-photo-327158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Variedad de hamburguesas" class="absolute inset-0 w-full h-full object-cover">
+            <div class="relative z-10 text-center" data-aos="fade-up">
+                <h1 class="text-5xl md:text-6xl font-extrabold">Nuestro Menú</h1>
+                <p class="text-lg md:text-xl mt-4">Sabor y calidad en cada bocado.</p>
+            </div>
+        </section>
+
+        <!-- Our Burgers Section -->
+        <section id="burgers-menu" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Nuestras Hamburguesas</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Burger Item 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                        <img src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Clásica Fun</h3>
+                            <p class="text-gray-600 mb-4">Carne de res, queso cheddar, lechuga, tomate, cebolla y nuestra inigualable salsa Fun.</p>
+                            <span class="text-yellow-500 font-bold text-lg">$15.000</span>
+                        </div>
+                    </div>
+                    <!-- Burger Item 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/2271107/pexels-photo-2271107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Bacon Fest</h3>
+                            <p class="text-gray-600 mb-4">Doble bacon crujiente, doble queso americano, carne de res y salsa barbacoa ahumada.</p>
+                            <span class="text-yellow-500 font-bold text-lg">$18.000</span>
+                        </div>
+                    </div>
+                    <!-- Burger Item 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.pexels.com/photos/327158/pexels-photo-327158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Veggie Power</h3>
+                            <p class="text-gray-600 mb-4">Hamburguesa de lentejas y champiñones, aguacate, rúcula y mayonesa vegana.</p>
+                            <span class="text-yellow-500 font-bold text-lg">$16.000</span>
+                        </div>
+                    </div>
+                    <!-- Burger Item 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                        <img src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Fuego Infernal</h3>
+                            <p class="text-gray-600 mb-4">Carne de res, queso pepper jack, jalapeños, aros de cebolla y nuestra salsa endiabladamente picante.</p>
+                            <span class="text-yellow-500 font-bold text-lg">$19.000</span>
+                        </div>
+                    </div>
+                    <!-- Burger Item 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Pollo Crispy</h3>
+                            <p class="text-gray-600 mb-4">Pechuga de pollo apanada, ensalada de col cremosa, pepinillos y mayonesa de ajo.</p>
+                            <span class="text-yellow-500 font-bold text-lg">$17.000</span>
+                        </div>
+                    </div>
+                    <!-- Burger Item 6 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.pexels.com/photos/2983099/pexels-photo-2983099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Doble Queso</h3>
+                            <p class="text-gray-600 mb-4">Doble carne, doble queso. Simple, potente y deliciosa. Un clásico que no falla.</p>
+                            <span class="text-yellow-500 font-bold text-lg">$20.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sides & Drinks Section -->
+        <section id="sides-drinks" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Acompañamientos y Bebidas</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div data-aos="fade-right">
+                        <h3 class="text-2xl font-bold mb-6">Acompañamientos</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b pb-2"><span>Papas a la Francesa</span><span class="font-bold text-yellow-500">$6.000</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>Aros de Cebolla</span><span class="font-bold text-yellow-500">$8.000</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>Papas Criollas con Hogao</span><span class="font-bold text-yellow-500">$7.000</span></li>
+                            <li class="flex justify-between"><span>Ensalada de la Casa</span><span class="font-bold text-yellow-500">$9.000</span></li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-left">
+                        <h3 class="text-2xl font-bold mb-6">Bebidas</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b pb-2"><span>Gaseosas</span><span class="font-bold text-yellow-500">$4.000</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>Cerveza Nacional</span><span class="font-bold text-yellow-500">$6.000</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>Malteadas (Vainilla, Chocolate, Fresa)</span><span class="font-bold text-yellow-500">$10.000</span></li>
+                            <li class="flex justify-between"><span>Limonada Natural / Cerezada</span><span class="font-bold text-yellow-500">$7.000</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combos & Offers Section -->
+        <section id="combos" class="py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">Combos y Ofertas</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="border-2 border-yellow-400 rounded-lg p-8" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold mb-4">Combo Clásico</h3>
+                        <p class="text-gray-600 mb-4">Hamburguesa Clásica Fun + Papas a la Francesa + Gaseosa.</p>
+                        <p class="text-2xl font-bold text-yellow-500">$22.000</p>
+                    </div>
+                    <div class="bg-yellow-400 text-gray-900 rounded-lg p-8 shadow-2xl transform scale-105" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold mb-4">Combo Pareja</h3>
+                        <p class="mb-4">2 Hamburguesas a elección + 2 Papas a la Francesa + 2 Gaseosas.</p>
+                        <p class="text-2xl font-bold">$45.000</p>
+                    </div>
+                    <div class="border-2 border-yellow-400 rounded-lg p-8" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-2xl font-bold mb-4">Combo Familiar</h3>
+                        <p class="text-gray-600 mb-4">4 Hamburguesas Clásicas + Papas Familiares + Gaseosa 1.5L.</p>
+                        <p class="text-2xl font-bold text-yellow-500">$75.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catering Services Section -->
+        <section id="catering" class="py-20 bg-gray-800 text-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-3xl font-bold mb-4">¡Llevamos la Fiesta a tu Evento!</h2>
+                        <p class="text-gray-400 mb-6">¿Tienes un cumpleaños, reunión o evento especial? Nuestro servicio de catering lleva el inconfundible sabor de BurguerFun a donde lo necesites. Nos encargamos de todo para que tú y tus invitados solo se preocupen por disfrutar.</p>
+                        <a href="contact.html" class="bg-yellow-400 text-gray-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition duration-300">Cotiza tu Evento</a>
+                    </div>
+                    <div data-aos="fade-left">
+                        <img src="https://images.pexels.com/photos/3758105/pexels-photo-3758105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Servicio de catering" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How to Order Section -->
+        <section id="how-to-order" class="py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">¿Cómo Pedir?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-4 text-left">
+                    <div data-aos="fade-up">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl font-bold text-yellow-400 mr-4">1</span>
+                            <div>
+                                <h3 class="text-xl font-bold">Visítanos</h3>
+                                <p class="text-gray-600">Ven a nuestro local y vive la experiencia completa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl font-bold text-yellow-400 mr-4">2</span>
+                            <div>
+                                <h3 class="text-xl font-bold">Llama y Recoge</h3>
+                                <p class="text-gray-600">Haz tu pedido por teléfono y recógelo sin filas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl font-bold text-yellow-400 mr-4">3</span>
+                            <div>
+                                <h3 class="text-xl font-bold">Próximamente: Delivery</h3>
+                                <p class="text-gray-600">Estamos trabajando para llevar tu pedido a la puerta de tu casa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quality Promise Section -->
+        <section id="quality" class="py-20 bg-gray-100">
+            <div class="container mx-auto text-center px-4">
+                <img src="https://images.pexels.com/photos/606541/pexels-photo-606541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ingredientes frescos" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover shadow-lg" data-aos="zoom-in">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Nuestra Promesa de Calidad</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Solo usamos carne 100% de res, vegetales frescos de proveedores locales y pan artesanal horneado diariamente. Sin congelados, sin conservantes. Solo sabor puro y auténtico.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Featured Burger Section -->
+        <section id="featured" class="py-20 bg-gray-800 text-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-2">Hamburguesa del Mes</h2>
+                <p class="text-yellow-400 mb-8">¡Disponible solo por tiempo limitado!</p>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4">
+                    <div data-aos="fade-right">
+                        <img src="https://images.pexels.com/photos/1552635/pexels-photo-1552635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="text-left" data-aos="fade-left">
+                        <h3 class="text-4xl font-bold mb-4">La Blue Cheese Dream</h3>
+                        <p class="text-gray-400 mb-4">Una audaz combinación de carne de res premium, queso azul cremoso, cebolla caramelizada, rúcula fresca y un toque de mermelada de higos, todo en nuestro pan de papa artesanal.</p>
+                        <span class="text-2xl font-bold text-yellow-400">$22.000</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials-services" class="py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">Ellos ya la probaron</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up">
+                        <p class="text-gray-600 mb-4">"La hamburguesa del mes es una obra de arte. ¡Nunca había probado algo igual! La combinación de sabores es perfecta."</p>
+                        <p class="font-bold">- Sofia Castro</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <p class="text-gray-600 mb-4">"El combo para parejas es ideal. Excelente precio y las hamburguesas son gigantes y deliciosas. ¡Totalmente recomendado!"</p>
+                        <p class="font-bold">- David Mesa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="final-cta-services" class="py-20 bg-yellow-400">
+            <div class="container mx-auto text-center px-4">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-aos="fade-up">¿Qué esperas para hacer tu pedido?</h2>
+                <p class="text-gray-800 text-lg mb-8" data-aos="fade-up" data-aos-delay="100">Elige tu favorita de nuestro menú y déjate sorprender.</p>
+                <a href="#combos" class="bg-gray-900 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-800 transition duration-300" data-aos="fade-up" data-aos-delay="200">Ver Combos</a>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-gray-900 text-white pt-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+            <div>
+                <h3 class="text-xl font-bold mb-4">BurguerFun</h3>
+                <p class="text-gray-400">Las mejores hamburguesas de la ciudad. Una experiencia de sabor inigualable.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Enlaces</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white">Inicio</a></li>
+                    <li><a href="about.html" class="text-gray-400 hover:text-white">Nosotros</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-white">Servicios</a></li>
+                    <li><a href="gallery.html" class="text-gray-400 hover:text-white">Galería</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Horario</h3>
+                <p class="text-gray-400">Lunes a Jueves: 12pm - 10pm</p>
+                <p class="text-gray-400">Viernes a Domingo: 12pm - 12am</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                <p class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i>Calle Falsa 123, Ciudad</p>
+                <p class="text-gray-400"><i class="fas fa-phone mr-2"></i>+123 456 7890</p>
+                <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>hola@burguerfun.com</p>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-800 text-center py-4">
+            <p class="text-gray-500">&copy; 2025 BurguerFun. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP Core -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+    <!-- Lenis JS -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>

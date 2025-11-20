@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurguerFun - Galería</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+    <!-- SEO & Open Graph Meta Tags -->
+    <meta name="description" content="Explora nuestra galería de imágenes y déjate tentar por nuestras deliciosas hamburguesas y creaciones culinarias.">
+    <meta property="og:title" content="BurguerFun - Galería">
+    <meta property="og:description" content="Explora nuestra galería de imágenes y déjate tentar por nuestras deliciosas hamburguesas y creaciones culinarias.">
+    <meta property="og:image" content="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+
+    <!-- Tailwind CSS CDN (script tag) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- GLightbox CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+    
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-gray-900 text-white shadow-lg fixed w-full z-20">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <a href="index.html" class="flex items-center space-x-2">
+                <i class="fas fa-hamburger text-2xl text-yellow-400"></i>
+                <span class="text-xl font-bold">BurguerFun</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="hover:text-yellow-400 transition duration-300">Inicio</a>
+                <a href="about.html" class="hover:text-yellow-400 transition duration-300">Nosotros</a>
+                <a href="services.html" class="hover:text-yellow-400 transition duration-300">Servicios</a>
+                <a href="gallery.html" class="hover:text-yellow-400 transition duration-300">Galería</a>
+                <a href="contact.html" class="hover:text-yellow-400 transition duration-300">Contacto</a>
+                <a href="#contact" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full hover:bg-yellow-500 transition duration-300">¡Pide ahora!</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="burger-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden nav-links bg-gray-900">
+            <button class="absolute top-4 right-4 text-white text-2xl close-menu-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <a href="index.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Inicio</a>
+            <a href="about.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Nosotros</a>
+            <a href="services.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Servicios</a>
+            <a href="gallery.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Galería</a>
+            <a href="contact.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Contacto</a>
+            <a href="#contact" class="block p-4 text-center bg-yellow-400 text-gray-900 hover:bg-yellow-500 transition duration-300">¡Pide ahora!</a>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="hero-gallery" class="relative h-96 flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <img src="https://images.pexels.com/photos/1251198/pexels-photo-1251198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fotografía de una hamburguesa" class="absolute inset-0 w-full h-full object-cover">
+            <div class="relative z-10 text-center" data-aos="fade-up">
+                <h1 class="text-5xl md:text-6xl font-extrabold">Galería de Sabor</h1>
+                <p class="text-lg md:text-xl mt-4">Una imagen vale más que mil bocados.</p>
+            </div>
+        </section>
+
+        <!-- Our Burgers Section -->
+        <section id="gallery-burgers" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Nuestras Creaciones</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <a href="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="burgers" data-aos="zoom-in">
+                        <img src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/2271107/pexels-photo-2271107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="burgers" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/2271107/pexels-photo-2271107.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/327158/pexels-photo-327158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="burgers" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.pexels.com/photos/327158/pexels-photo-327158.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                     <a href="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="burgers" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Our Ingredients Section -->
+        <section id="gallery-ingredients" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">La Frescura de lo Natural</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <a href="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="ingredients" data-aos="zoom-in">
+                        <img src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/130634/pexels-photo-130634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="ingredients" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/130634/pexels-photo-130634.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="ingredients" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                     <a href="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="ingredients" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Restaurant Section -->
+        <section id="gallery-restaurant" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Nuestro Espacio</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="restaurant" data-aos="zoom-in">
+                        <img src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-lg shadow-lg w-full h-96 object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="restaurant" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-lg shadow-lg w-full h-96 object-cover">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section id="gallery-team" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">El Corazón de BurguerFun</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <a href="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="team" data-aos="zoom-in">
+                        <img src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="team" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="team" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/3777931/pexels-photo-3777931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="team" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://images.pexels.com/photos/3777931/pexels-photo-3777931.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Customers Section -->
+        <section id="gallery-customers" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Nuestros Clientes Felices</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <a href="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="customers" data-aos="zoom-in">
+                        <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="customers" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="customers" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="gallery-events" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Eventos y Celebraciones</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="events" data-aos="zoom-in">
+                        <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-lg shadow-lg w-full h-96 object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/1157557/pexels-photo-1157557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="events" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/1157557/pexels-photo-1157557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-lg shadow-lg w-full h-96 object-cover">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section id="gallery-videos" class="py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-12">En Movimiento</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="relative rounded-lg overflow-hidden shadow-lg" data-aos="fade-up">
+                        <a href="https://www.youtube.com/watch?v=ScMzIvxBSi4" class="glightbox">
+                            <img src="https://img.youtube.com/vi/ScMzIvxBSi4/hqdefault.jpg" class="w-full">
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                                <i class="fas fa-play-circle text-white text-6xl"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <a href="https://www.youtube.com/watch?v=JynGuQx4a1Y" class="glightbox">
+                            <img src="https://img.youtube.com/vi/JynGuQx4a1Y/hqdefault.jpg" class="w-full">
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                                <i class="fas fa-play-circle text-white text-6xl"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food in Action Section -->
+        <section id="gallery-action" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">El Arte de la Hamburguesa</h2>
+                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <a href="https://images.pexels.com/photos/3621168/pexels-photo-3621168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="action" data-aos="zoom-in">
+                        <img src="https://images.pexels.com/photos/3621168/pexels-photo-3621168.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/4106412/pexels-photo-4106412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="action" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/4106412/pexels-photo-4106412.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/3758133/pexels-photo-3758133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="action" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.pexels.com/photos/3758133/pexels-photo-3758133.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                    <a href="https://images.pexels.com/photos/367915/pexels-photo-367915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="action" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://images.pexels.com/photos/367915/pexels-photo-367915.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="final-cta-gallery" class="py-20 bg-yellow-400">
+            <div class="container mx-auto text-center px-4">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-aos="fade-up">¿Antojado?</h2>
+                <p class="text-gray-800 text-lg mb-8" data-aos="fade-up" data-aos-delay="100">Tu próxima hamburguesa favorita te está esperando.</p>
+                <a href="services.html" class="bg-gray-900 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-800 transition duration-300" data-aos="fade-up" data-aos-delay="200">Ver el Menú</a>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-gray-900 text-white pt-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+            <div>
+                <h3 class="text-xl font-bold mb-4">BurguerFun</h3>
+                <p class="text-gray-400">Las mejores hamburguesas de la ciudad. Una experiencia de sabor inigualable.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Enlaces</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white">Inicio</a></li>
+                    <li><a href="about.html" class="text-gray-400 hover:text-white">Nosotros</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-white">Servicios</a></li>
+                    <li><a href="gallery.html" class="text-gray-400 hover:text-white">Galería</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Horario</h3>
+                <p class="text-gray-400">Lunes a Jueves: 12pm - 10pm</p>
+                <p class="text-gray-400">Viernes a Domingo: 12pm - 12am</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                <p class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i>Calle Falsa 123, Ciudad</p>
+                <p class="text-gray-400"><i class="fas fa-phone mr-2"></i>+123 456 7890</p>
+                <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>hola@burguerfun.com</p>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-800 text-center py-4">
+            <p class="text-gray-500">&copy; 2025 BurguerFun. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP Core -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+    <!-- Lenis JS -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>

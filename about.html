@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurguerFun - Sobre Nosotros</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+    <!-- SEO & Open Graph Meta Tags -->
+    <meta name="description" content="Conoce la historia de BurguerFun, nuestra pasión por las hamburguesas y el equipo que hace posible que disfrutes de la mejor comida.">
+    <meta property="og:title" content="BurguerFun - Sobre Nosotros">
+    <meta property="og:description" content="Conoce la historia de BurguerFun, nuestra pasión por las hamburguesas y el equipo que hace posible que disfrutes de la mejor comida.">
+    <meta property="og:image" content="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+
+    <!-- Tailwind CSS CDN (script tag) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- GLightbox CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+    
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-gray-900 text-white shadow-lg fixed w-full z-20">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <a href="index.html" class="flex items-center space-x-2">
+                <i class="fas fa-hamburger text-2xl text-yellow-400"></i>
+                <span class="text-xl font-bold">BurguerFun</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="hover:text-yellow-400 transition duration-300">Inicio</a>
+                <a href="about.html" class="hover:text-yellow-400 transition duration-300">Nosotros</a>
+                <a href="services.html" class="hover:text-yellow-400 transition duration-300">Servicios</a>
+                <a href="gallery.html" class="hover:text-yellow-400 transition duration-300">Galería</a>
+                <a href="contact.html" class="hover:text-yellow-400 transition duration-300">Contacto</a>
+                <a href="#contact" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full hover:bg-yellow-500 transition duration-300">¡Pide ahora!</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="burger-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden nav-links bg-gray-900">
+            <button class="absolute top-4 right-4 text-white text-2xl close-menu-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <a href="index.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Inicio</a>
+            <a href="about.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Nosotros</a>
+            <a href="services.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Servicios</a>
+            <a href="gallery.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Galería</a>
+            <a href="contact.html" class="block p-4 text-center hover:bg-gray-800 transition duration-300">Contacto</a>
+            <a href="#contact" class="block p-4 text-center bg-yellow-400 text-gray-900 hover:bg-yellow-500 transition duration-300">¡Pide ahora!</a>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="hero-about" class="relative h-96 flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <img src="https://images.pexels.com/photos/3616956/pexels-photo-3616956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipo de cocina de BurguerFun" class="absolute inset-0 w-full h-full object-cover">
+            <div class="relative z-10 text-center" data-aos="fade-up">
+                <h1 class="text-5xl md:text-6xl font-extrabold">Sobre BurguerFun</h1>
+                <p class="text-lg md:text-xl mt-4">Nuestra pasión es crear momentos felices, una hamburguesa a la vez.</p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="story" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <img src="https://images.pexels.com/photos/1482803/pexels-photo-1482803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Inicio de BurguerFun" class="rounded-lg shadow-lg">
+                    </div>
+                    <div data-aos="fade-left">
+                        <h2 class="text-3xl font-bold mb-4">Nuestra Historia</h2>
+                        <p class="text-gray-600 mb-4">Todo comenzó en 2024 con un pequeño food truck y un gran sueño: crear la hamburguesa perfecta. Nuestro fundador, un apasionado de la cocina, recorrió el país en busca de los mejores ingredientes y las recetas más auténticas.</p>
+                        <p class="text-gray-600">Con dedicación y mucho sabor, lo que empezó como un modesto puesto se convirtió en el lugar de referencia para los amantes de las hamburguesas. Hoy, BurguerFun es un punto de encuentro para amigos y familias que buscan calidad y buen ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section id="mission" class="py-20 bg-gray-100">
+            <div class="container mx-auto text-center px-4">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-yellow-400 mb-4" data-aos="zoom-in">
+                        <i class="fas fa-bullseye text-5xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Nuestra Misión</h2>
+                    <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">"Servir hamburguesas extraordinarias que provoquen sonrisas, utilizando ingredientes frescos y de alta calidad en un ambiente acogedor y divertido, creando una experiencia memorable para cada cliente."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values Section -->
+        <section id="values" class="py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">Nuestros Valores</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
+                    <div data-aos="fade-up">
+                        <div class="border border-yellow-400 rounded-lg p-8">
+                            <i class="fas fa-star text-3xl text-yellow-400 mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Calidad</h3>
+                            <p class="text-gray-600">Nos obsesiona la calidad. Desde la carne hasta el pan, todo es seleccionado cuidadosamente.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="border border-yellow-400 rounded-lg p-8">
+                            <i class="fas fa-heart text-3xl text-yellow-400 mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Pasión</h3>
+                            <p class="text-gray-600">Amamos lo que hacemos y ponemos el corazón en cada hamburguesa que servimos.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="border border-yellow-400 rounded-lg p-8">
+                            <i class="fas fa-users text-3xl text-yellow-400 mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Comunidad</h3>
+                            <p class="text-gray-600">Somos más que un restaurante, somos un lugar para conectar y compartir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Team Section -->
+        <section id="team" class="py-20 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">Conoce al Equipo</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+                    <div class="text-center" data-aos="fade-up">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Miembro del equipo 1" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg">
+                        <h3 class="text-xl font-bold">Juan Pérez</h3>
+                        <p class="text-gray-500">Chef Principal</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Miembro del equipo 2" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg">
+                        <h3 class="text-xl font-bold">Ana García</h3>
+                        <p class="text-gray-500">Manager</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Miembro del equipo 3" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg">
+                        <h3 class="text-xl font-bold">Carlos López</h3>
+                        <p class="text-gray-500">Jefe de Cocina</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Miembro del equipo 4" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg">
+                        <h3 class="text-xl font-bold">Luis Martinez</h3>
+                        <p class="text-gray-500">Parrillero Estrella</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Behind the Scenes Section -->
+        <section id="behind-the-scenes" class="py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">Detrás de Escena</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
+                    <a href="https://images.pexels.com/photos/3220617/pexels-photo-3220617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="behind-scenes" data-aos="zoom-in">
+                        <img src="https://images.pexels.com/photos/3220617/pexels-photo-3220617.jpeg?auto=compress&cs=tinysrgb&w=400" class="rounded-lg shadow-lg">
+                    </a>
+                    <a href="https://images.pexels.com/photos/4061413/pexels-photo-4061413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="behind-scenes" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.pexels.com/photos/4061413/pexels-photo-4061413.jpeg?auto=compress&cs=tinysrgb&w=400" class="rounded-lg shadow-lg">
+                    </a>
+                    <a href="https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="behind-scenes" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=400" class="rounded-lg shadow-lg">
+                    </a>
+                    <a href="https://images.pexels.com/photos/3889987/pexels-photo-3889987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="glightbox" data-gallery="behind-scenes" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://images.pexels.com/photos/3889987/pexels-photo-3889987.jpeg?auto=compress&cs=tinysrgb&w=400" class="rounded-lg shadow-lg">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Commitment Section -->
+        <section id="commitment" class="py-20 bg-gray-800 text-white">
+            <div class="container mx-auto text-center px-4">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Nuestro Compromiso con la Calidad</h2>
+                <p class="text-lg text-gray-400 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Desde la granja hasta tu plato, garantizamos la frescura. Colaboramos con productores locales para asegurarnos de que cada ingrediente cumpla con nuestros altos estándares. Creemos que una gran hamburguesa comienza con grandes ingredientes.</p>
+            </div>
+        </section>
+        
+        <!-- Join Our Team Section -->
+        <section id="join-us" class="py-20">
+            <div class="container mx-auto text-center px-4">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">¿Quieres ser parte de BurguerFun?</h2>
+                <p class="text-gray-600 text-lg mb-8" data-aos="fade-up" data-aos-delay="100">Buscamos personas apasionadas por la comida y el buen servicio. Si crees que tienes lo necesario, contáctanos.</p>
+                <a href="contact.html" class="bg-yellow-400 text-gray-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-yellow-500 transition duration-300" data-aos="fade-up" data-aos-delay="200">Únete al Equipo</a>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials-about" class="py-20 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12">Más Opiniones</h2>
+                <div class="max-w-3xl mx-auto" data-aos="fade-up">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <p class="text-gray-600 mb-4">"El ambiente es increíble y el personal es súper amable. Se nota que disfrutan lo que hacen, y eso se refleja en la comida. ¡Es mi lugar de hamburguesas número uno!"</p>
+                        <p class="font-bold">- Laura Fernandez</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="final-cta-about" class="py-20 bg-yellow-400">
+            <div class="container mx-auto text-center px-4">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-aos="fade-up">¡Ahora que nos conoces mejor, ven a visitarnos!</h2>
+                <p class="text-gray-800 text-lg mb-8" data-aos="fade-up" data-aos-delay="100">Estamos ansiosos por servirte la mejor hamburguesa de tu vida.</p>
+                <a href="contact.html" class="bg-gray-900 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-800 transition duration-300" data-aos="fade-up" data-aos-delay="200">Encuéntranos</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white pt-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+            <div>
+                <h3 class="text-xl font-bold mb-4">BurguerFun</h3>
+                <p class="text-gray-400">Las mejores hamburguesas de la ciudad. Una experiencia de sabor inigualable.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Enlaces</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white">Inicio</a></li>
+                    <li><a href="about.html" class="text-gray-400 hover:text-white">Nosotros</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-white">Servicios</a></li>
+                    <li><a href="gallery.html" class="text-gray-400 hover:text-white">Galería</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Horario</h3>
+                <p class="text-gray-400">Lunes a Jueves: 12pm - 10pm</p>
+                <p class="text-gray-400">Viernes a Domingo: 12pm - 12am</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                <p class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i>Calle Falsa 123, Ciudad</p>
+                <p class="text-gray-400"><i class="fas fa-phone mr-2"></i>+123 456 7890</p>
+                <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>hola@burguerfun.com</p>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-800 text-center py-4">
+            <p class="text-gray-500">&copy; 2025 BurguerFun. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP Core -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+    <!-- Lenis JS -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
