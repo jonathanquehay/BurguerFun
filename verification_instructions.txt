@@ -1,4 +1,4 @@
-I have made the necessary adjustments to the `style.css` file to address the mobile menu issues, added a dedicated close button, and a favicon.
+I have made the necessary adjustments to the `style.css` file to address the mobile menu issues, added a dedicated close button, a favicon, and a floating WhatsApp button.
 
 Specifically, I have:
 - Added `outline: none; box-shadow: none;` to the `.burger-icon:focus` style to eliminate the "blue box" that appears on focus.
@@ -11,20 +11,22 @@ Specifically, I have:
 - Corrected the CSS selectors for the burger icon's toggle animation (`.burger-icon.toggle .line1`, `.burger-icon.toggle .line2`, `.burger-icon.toggle .line3`) to ensure the hamburger icon transforms into an "X" when the menu is open and back again when closed.
 - Added a dedicated close button (`<button class="close-menu-btn">`) with a Font Awesome cross icon to the mobile menu in all HTML files.
 - Updated `main.js` to add an event listener to this new close button, allowing it to close the mobile menu.
-- **Replaced the image-based favicon with a direct hamburger emoji favicon (🍔) using a data URI in all HTML files.**
+- Replaced the image-based favicon with a direct hamburger emoji favicon (🍔) using a data URI in all HTML files.
+- **Added a floating WhatsApp button with its logo to the bottom-right of all HTML pages.**
 
 **To verify the fixes:**
 1.  Open any HTML file (e.g., `index.html`) in your browser.
-2.  **You should see a hamburger emoji (🍔) as the favicon in your browser tab.**
-3.  Resize your browser window to a mobile viewport size, or use your browser's developer tools to simulate a mobile device.
-4.  Click on the hamburger icon (burger-icon) in the header to open the menu.
+2.  You should see a hamburger emoji (🍔) as the favicon in your browser tab.
+3.  **A floating green WhatsApp button with the WhatsApp logo should be visible in the bottom-right corner of the screen.** Click on it, and it should open a WhatsApp chat (to a placeholder number).
+4.  Resize your browser window to a mobile viewport size, or use your browser's developer tools to simulate a mobile device.
+5.  Click on the hamburger icon (burger-icon) in the header to open the menu.
 
 You should observe that:
 -   No blue box appears around the hamburger icon when you click it.
 -   The mobile menu slides in from the right, covering the main content, and the links are clearly visible.
 -   The hamburger icon transforms into an "X" when the menu is open.
 -   A new "X" close button is visible in the top-right corner of the open mobile menu.
-5.  Click on the new "X" close button within the mobile menu.
+6.  Click on the new "X" close button within the mobile menu.
 
 You should observe that:
 -   The mobile menu closes smoothly.
